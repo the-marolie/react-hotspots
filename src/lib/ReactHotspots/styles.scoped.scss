@@ -21,6 +21,26 @@
         }
     }
 
+    &__error {
+        background: #d3d3d3;
+        display: flex;
+        width: auto;
+        padding: 15px;
+        color: #e22e2e;
+        position: relative;
+
+        &:before {
+            content: "";
+            background: #e22e2e;
+            display: block;
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
     &__hotspots {
         height: 100%;
         width: 100%;
@@ -33,17 +53,14 @@
 
             &__trigger {
                 font-size: 2vw;
+                color: #fff;
+                line-height: 0;
 
                 &:hover {
 
                     &+.react-hotspots__hotspots__hotspot__content__container {
                         opacity: 1;
-                        position: absolute;
-                        left: -18px;
-                        background-color: #fff;
-                        color: #000;
-                        padding: 5px 15px;
-                        width: max-content;
+
 
                     }
                 }
@@ -51,19 +68,12 @@
 
             &__content__container {
                 opacity: 0;
+                background-color: #fff;
+                color: #000;
+                padding: 5px 15px;
+                width: max-content;
                 transition: opacity 0.5s ease-in-out;
-
-                &:after {
-                    content: "";
-                    width: 0;
-                    height: 0;
-                    border-left: 15px solid transparent;
-                    border-right: 15px solid transparent;
-                    border-bottom: 15px solid white;
-                    position: absolute;
-                    top: -15px;
-                    left: 15px;
-                }
+                margin-top: 15px;
             }
         }
     }

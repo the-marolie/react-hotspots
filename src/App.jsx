@@ -1,22 +1,27 @@
-import { useState } from 'react'
+import React from 'react'
 import ReactHotspots from './lib/ReactHotspots'
+
 import { Si1Password } from "react-icons/si";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
         <ReactHotspots
             image='https://unsplash.com/photos/RD8qNV6QXy8/download?ixid=MnwxMjA3fDB8MXxhbGx8M3x8fHx8fDJ8fDE2NzYxNjkwNDk&force=true&w=2400'
             imageAlt="React Logo"
+            className="cstm-container"
+            iconSize='30px'
             overlay={true}
             hotspots={[
                 {
                     left: '50%',
                     top: '50%',
                     triggerIcon: <Si1Password />,
-                    content: 'Text'
+                    className: 'cstm-hotspot',
+                    iconSize: '60px',
+                    iconColor: 'red',
+                    
                 },
                 {
                     left: '25%',
