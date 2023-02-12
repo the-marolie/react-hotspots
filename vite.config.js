@@ -17,12 +17,12 @@ export default defineConfig((configEnv) => ({
       linters: [new EsLinter({ configEnv })],
     }),
     dts({
-      include: ['src/component/'],
+      include: ['src/lib/'],
     }),
   ],
   build: {
     lib: {
-      entry: resolve('src', 'component/index.js'),
+      entry: resolve('src', 'lib/index.js'),
       name: 'ReactHotspots',
       formats: ['es', 'umd'],
       fileName: (format) => `react-hotspots.${format}.js`,
