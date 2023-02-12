@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
 import ReactHotspots from './lib/ReactHotspots'
 import { Si1Password } from "react-icons/si";
 
