@@ -45,7 +45,8 @@ Use it:
                 className: 'cstm-hotspot',
                 iconSize: '60px',
                 iconColor: 'red',
-                content: 'Text'
+                content: 'Text',
+                modal: true,
         	},
             {
                 left: '25%',
@@ -83,6 +84,7 @@ Use it:
 | `className` | String, _optional_ | | Apply custom classname to the hotspot element  |
 | `iconSize` | String, _optional_ | `30px` | Set the font size for the icon. This will be applied to individual hotspot and will override the global value. |
 | `iconColor` | String, _optional_ | `#ffffff` | Set the icon color. This will be applied to individual hotspot and will override the global value. |
+| `modal` | Boolean, _optional_ | `false` | If set to `true`, the hotspot content will be displayed in a modal. |
 | `content` | React or HTML element, _optional_ |         | Hotspot content. If no content is provided, only the icon would be displayed               
 
 ## License
