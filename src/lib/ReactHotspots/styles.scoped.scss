@@ -55,6 +55,7 @@
                 font-size: 2vw;
                 color: #fff;
                 line-height: 0;
+                cursor: pointer;
 
                 &:hover {
 
@@ -63,6 +64,23 @@
 
 
                     }
+                }
+            }
+
+            &__modal__container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                overflow: auto;
+
+                &.active {
+                    display: flex;
                 }
             }
 
@@ -75,6 +93,39 @@
                 transition: opacity 0.5s ease-in-out;
                 margin-top: 15px;
             }
+        }
+    }
+
+    &__modal__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        width: auto;
+        max-width: 600px;
+        height: auto;
+        padding: 20px;
+        min-width: 150px;
+        min-height: 150px;
+        display: none;
+
+        &.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button.modal__close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            outline: none;
+            background: transparent;
+            font-size: 30px;
+            border: none;
+            cursor: pointer;
+            z-index: 2;
         }
     }
 

@@ -21,12 +21,15 @@ function App() {
                     className: 'cstm-hotspot',
                     iconSize: '60px',
                     iconColor: 'red',
+                    modal: true,
+                    content: <div>Hotspot 1</div>
                     
                 },
                 {
                     left: '25%',
                     top: '25%',
-                    content: <div>Hotspot 2</div>
+                    content: <div>Hotspot 2</div>,
+                    modal: true
                 },
                 {
                     left: '75%',
