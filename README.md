@@ -1,4 +1,7 @@
 
+
+![GitHub package.json version](https://img.shields.io/github/package-json/v/the-marolie/react-hotspots?style=for-the-badge) ![npm](https://img.shields.io/npm/dw/react-hotspots?style=for-the-badge) ![npm bundle size](https://img.shields.io/bundlephobia/min/react-hotspots?style=for-the-badge) ![NPM License](https://img.shields.io/npm/l/react-hotspots?style=for-the-badge)
+
 # react-hotspots
 
 React component to create image hotspots
@@ -84,4 +87,6 @@ Use it:
 
 ## License
 
-[MIT License](https://github.com/the-marolie/react-hotspots/blob/main/LICENSE)
+[MIT License](https://github.com/the-marolie/react-hotspots/blob/main/LICENSE) © 2023 [the-marolie](https://github.com/the-marolie)
+
+
