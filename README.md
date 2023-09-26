@@ -25,6 +25,7 @@ Import the component and base styles:
 ```jsx
 import ReactHotspots from 'react-hotspots'
 import 'react-hotspots/dist/style.css';
+import { Si1Password } from 'react-icons/si';
 ```
 
 Use it:
@@ -61,6 +62,13 @@ Use it:
         ]}
     />
 ```
+
+## Demo
+
+[![Edit react-hotspots](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/react-hotspots-demo-3kcvfr?fontsize=14&hidenavigation=1&theme=dark)
+
+
+
 ### Component props
 
 | Props                   | Type                         | Default | Description                |

@@ -71,7 +71,7 @@ const ReactHotspots = (props) => {
                 <div className="react-hotspots__modal__content">
                     {modalContent}
                 </div>
-                <button class="modal__close" onClick={hideModal}>
+                <button className="modal__close" onClick={hideModal}>
                     <AiFillCloseCircle />
                 </button>
             </div>
